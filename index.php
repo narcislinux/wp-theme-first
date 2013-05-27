@@ -9,8 +9,8 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />	
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats please -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -25,7 +25,7 @@
 <body>
 
 <!-- #header -->
-<div class="container-fluid" class="hidden-phone">
+<div class="container-fluid hidden-phone">
 	<div id="header"  >
 	<div class="row-fluid">
  		<div class="span12">
@@ -107,23 +107,26 @@
 <!-- #sidebar -->
 
 
-			<div class="sidebar" class="hidden-phone">
+			<div class="sidebar hidden-phone">
 
 			 <div class="span4">
 				
 
 				<ul>
+
+					<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar() ) : else : ?>
+
 					<li><h2><?php _e('Meta'); ?></h2>
-					<ul>
-					<?php wp_register(); ?>
-					<li><?php wp_loginout(); ?></li>
-					<?php wp_meta(); ?>
-					</ul>
+						<ul>
+							<?php wp_register(); ?>
+							<li><?php wp_loginout(); ?></li>
+							<?php wp_meta(); ?>
+						</ul>
 					</li>
 
-					<li id="search">
+					<!-- li id="search">
 					<?php include(TEMPLATEPATH . '/searchform.php'); ?>
-					</li>
+					</li -->
 
 					<li id="calendar"><h2><?php _e('Calendar'); ?></h2>
 					<?php get_calendar(); ?>
@@ -146,7 +149,7 @@
 
 					<?php get_links_list(); ?>
 
-
+					<?php endif; ?>
 
 				</ul>
 
@@ -158,10 +161,16 @@
 
 <!-- end #post&sidebar -->
 
+
 <!-- #footer -->
 <div class="container-fluid">
 	<div class="footer">
         <p class="pull-right"><a href="#">Back to top</a></p>
+
+	    <p>
+	    	<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" 
+	    	alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+	  	</p>
      </div>
 </div>
 <!--End Footer-->
