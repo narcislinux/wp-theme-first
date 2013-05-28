@@ -13,9 +13,17 @@ Author URI: http://www.your address.com/
 @import url('assets/css/bootstrap-responsive.css');
 
 body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
+	margin:10px;
+	padding-top: 60px; 
+	padding-bottom: 40px; 
+	background: #e5e5e5 url('./img/3.png') no-repeat right top;
 }
- 
-<div class="container-fluid">
-  <div class="row-fluid">
+
+#header {
+	
+}
+
+
+a {
+	color: #7bbfbf;
+}
