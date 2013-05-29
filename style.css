@@ -17,6 +17,7 @@ body {
 	padding-top: 60px; 
 	padding-bottom: 40px; 
 	background: #e5e5e5 url('./img/3.png') no-repeat right top;
+
 }
 
 #header {
@@ -24,8 +25,22 @@ body {
 }
 
 #footer {
-	background-color: #7bbfbf;
+	margin-top: 30px;
+	background-color: #54acac;
+	height: 300px;
 	position: center; 
+}
+
+#all-post {
+	background-color:  #ebebeb;
+	padding:20px 30px;
+
+}
+
+
+.post-sidebar{
+	background-color:  #efefef;
+	
 }
 
 a {

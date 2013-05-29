@@ -50,7 +50,7 @@
 </div>
 
 <!-- end #header -->
-
+<div class="post-sidebar container-fluid" >
 <!-- #post&sidebar -->
 
 <!-- #post -->
@@ -111,7 +111,7 @@
 <!-- #sidebar -->
 
 
-			<div class="sidebar hidden-phone">
+			<div id="sidebar" class="hidden-phone">
 
 			 <div class="span3">
 				
@@ -166,17 +166,25 @@
 <!-- end #sidebar -->
 
 <!-- end #post&sidebar -->
-
+</div>
 
 <!-- #footer -->
 <div class="container-fluid">
 	<div id="footer">
+
+		<div class="span12">
+			
         <p class="pull-right"><a href="#">Back to top</a></p>
 
 	    <p>
 	    	<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" 
 	    	alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
 	  	</p>
+
+	  	
+	  	
+	  	</div>
+
      </div>
 </div>
 <!--End Footer-->
