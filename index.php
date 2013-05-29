@@ -40,9 +40,10 @@
 			    </ul>
 			  </div>
 			</div>
-
+		<!-- don't need title
 			<h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?> </a></h1>
 		 	<?php bloginfo('description');?>
+		 -->
     	</div>
     </div>
 	</div>
@@ -55,7 +56,9 @@
 <!-- #post -->
 <div class="container-fluid" >
 <div class="row-fluid">
-			<div class="span8">
+			<div class="span1">
+			</div>
+			<div class="span7">
 				<div id="all-post">
 		 			<?php if ( have_posts() ) : ?>
 						<?php /* Start the Loop */ ?>
@@ -110,7 +113,7 @@
 
 			<div class="sidebar hidden-phone">
 
-			 <div class="span4">
+			 <div class="span3">
 				
 
 				<ul>
@@ -156,6 +159,8 @@
 
 			 </div>
 			</div>
+			<div class="span1">
+			</div>
 	</div>
 </div>
 <!-- end #sidebar -->
@@ -165,7 +170,7 @@
 
 <!-- #footer -->
 <div class="container-fluid">
-	<div class="footer">
+	<div id="footer">
         <p class="pull-right"><a href="#">Back to top</a></p>
 
 	    <p>
