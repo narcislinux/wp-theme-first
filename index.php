@@ -18,6 +18,12 @@
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+<!-- add java script botsrtapt -->
+<script src="twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script> 
+
+
+
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php //comments_popup_script(); // off by default ?>
 	<?php wp_head(); ?>
@@ -29,6 +35,11 @@
 	<div id="header"  >
 	<div class="row-fluid">
  		<div class="span12">
+
+
+
+
+
 
 			<!--nav0-->
 			<div class="navbar navbar-fixed-top">
@@ -96,6 +107,71 @@
 			  </div>
 			</div>
 			<!-- end nav 2 -->
+
+
+			<!-- nav 3 -->
+		    <div class="navbar">
+		    <div class="navbar-inner">
+		    <div class="container">
+		    
+			    <ul class="nav">  
+				  <li class="active">  
+				    <a class="brand" href="#">w3resource</a>  
+				  </li>  
+				  <li><a href="#">About</a></li>  
+				  <li><a href="#">Portfolio</a></li>  
+				  <li><a href="#">Contact</a></li>  
+				      <li><?php mytheme_nav(); ?></li>
+				</ul>  
+
+
+				<ul class="nav">  
+				  <li class="dropdown">  
+				    <a href="#"  
+				          class="dropdown-toggle"  
+				          data-toggle="dropdown">  
+				          Services  
+				          <b class="caret"></b>  
+				    </a>  
+				    <ul class="dropdown-menu">  
+				     <li><a href="#">Web Design</a></li>  
+				  <li><a href="#">Web development</a></li>  
+				  <li><a href="#">Wordpress Theme development</a></li>  
+				    </ul>  
+				  </li>  
+				</ul>  
+			
+					
+<ul class="nav pull-right">  
+  <li class="dropdown">  
+    <a href="#"  
+          class="dropdown-toggle"  
+          data-toggle="dropdown">  
+          Social  
+          <b class="caret"></b>  
+    </a>  
+    <ul class="dropdown-menu">  
+     <li class="socials"><!-- Place this tag where you want the +1 button to render -->  
+<g:plusone annotation="inline" width="150"></g:plusone>  
+</li>  
+  <li class="socials"><div class="fb-like" data-send="false" data-width="150" data-show-faces="true"></div></li>  
+  <li class="socials"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>  
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>  
+    </ul>  
+  </li>  
+</ul>  
+              
+- See more at: http://www.w3resource.com/twitter-bootstrap/navbar-tutorial.php#sthash.zviz1w0f.dpuf
+						     
+		    </div>
+		    </div>
+		    </div>
+ 			<!-- end nav 3-->
+
+
+
+
+
 
 		<!-- don't need title
 			<h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?> </a></h1>
