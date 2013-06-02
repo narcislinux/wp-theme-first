@@ -41,27 +41,23 @@
 
 
 
-			<!--nav0-->
+			<!--nav0 -->
 			<div class="navbar navbar-fixed-top">
 				<div class="navbar-inner">
 					<div class="container">
-						<?php
-							
-							$args = array(
-								'theme_location' => 'top-bar',
-								'depth'		 => 0,
-								'container'	 => false,
-								'menu_class'	 => 'nav',
-								'walker'	 => new BootstrapNavMenuWalker()
-							);
-
-							wp_nav_menu($args);
-						
-						?>
+							<?php if (has_nav_menu('top-menu', 'responsive')) { ?>
+					        <?php wp_nav_menu(array(
+								    'container'       => '',
+									'fallback_cb'	  =>  false,
+									'menu_class'      => 'top-menu',
+									'theme_location'  => 'top-menu')
+									); 
+								?>
+				       		 <?php } ?>
 					</div>
 				</div>
 			</div>
-			<!--end nav0-->
+			<!-- end nav0-->
 
 
 
