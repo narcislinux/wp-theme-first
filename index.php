@@ -30,6 +30,61 @@
 	<div class="row-fluid">
  		<div class="span12">
 
+			<!--nav0-->
+			<div class="navbar navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+						<?php
+							
+							$args = array(
+								'theme_location' => 'top-bar',
+								'depth'		 => 0,
+								'container'	 => false,
+								'menu_class'	 => 'nav',
+								'walker'	 => new BootstrapNavMenuWalker()
+							);
+
+							wp_nav_menu($args);
+						
+						?>
+					</div>
+				</div>
+			</div>
+			<!--end nav0-->
+
+
+
+
+			<!-- nav 1 -->
+		    <div class="navbar">
+		    <div class="navbar-inner">
+		    <div class="container">
+		     
+		    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+		    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		    <?php mytheme_nav(); ?>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		    <span class="icon-bar"></span>
+		
+		    </a>
+		     
+		    <!-- Be sure to leave the brand out there if you want it shown -->
+		    <a class="brand" href="#">Project name</a>
+		  
+		     
+		    <!-- Everything you want hidden at 940px or less, place within here -->
+		    <div class="nav-collapse collapse">
+		    <!-- .nav, .navbar-search, .navbar-form, etc -->
+		    <?php mytheme_nav(); ?>
+		    </div>
+		     
+		    </div>
+		    </div>
+		    </div>
+ 			<!-- end nav 1-->
+
+			<!-- nav 2 -->
 			<div class="navbar">
 			  <div class="navbar-inner">
 			    <a class="brand" href="#">Title</a>
@@ -40,6 +95,8 @@
 			    </ul>
 			  </div>
 			</div>
+			<!-- end nav 2 -->
+
 		<!-- don't need title
 			<h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?> </a></h1>
 		 	<?php bloginfo('description');?>
