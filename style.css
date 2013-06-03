@@ -29,20 +29,34 @@ body {
 	background-color: #54acac;
 	height: 300px;
 	position: center; 
+	border-top-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-radius: 4px;
 }
 
 .footer-iso {
 	position:fixed right;
+	
+
  }
 
 #all-post {
+	
 	background-color:  #ebebeb;
 	padding:20px 30px;
+	border-color: #cccccc;
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 1px;
 
 }
 
+#sidebar{
 
-.post-sidebar{
+}
+
+/* .post-sidebar{
 	background-color:  #efefef;
 	
-}
+} */

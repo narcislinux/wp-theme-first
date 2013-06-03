@@ -40,58 +40,17 @@
 
 
 
-
-			<!--nav0 -->
-			<div class="navbar navbar-fixed-top">
-				<div class="navbar-inner">
-					<div class="container">
-							<?php if (has_nav_menu('top-menu', 'responsive')) { ?>
-					        <?php wp_nav_menu(array(
-								    'container'       => '',
-									'fallback_cb'	  =>  false,
-									'menu_class'      => 'top-menu',
-									'theme_location'  => 'top-menu')
-									); 
-								?>
-				       		 <?php } ?>
-					</div>
-				</div>
-			</div>
-			<!-- end nav0-->
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact Us</a>
+</nav>
 
 
 
 
-			<!-- nav 1 -->
-		    <div class="navbar">
-		    <div class="navbar-inner">
-		    <div class="container">
-		     
-		    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-		    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		    <?php mytheme_nav(); ?>
-		    <span class="icon-bar"></span>
-		    <span class="icon-bar"></span>
-		    <span class="icon-bar"></span>
-		
-		    </a>
-		     
-		    <!-- Be sure to leave the brand out there if you want it shown -->
-		    <a class="brand" href="#">Project name</a>
-		  
-		     
-		    <!-- Everything you want hidden at 940px or less, place within here -->
-		    <div class="nav-collapse collapse">
-		    <!-- .nav, .navbar-search, .navbar-form, etc -->
-		    <?php mytheme_nav(); ?>
-		    </div>
-		     
-		    </div>
-		    </div>
-		    </div>
- 			<!-- end nav 1-->
-
-			<!-- nav 2 -->
+			<!-- nav  -->
 			<div class="navbar">
 			  <div class="navbar-inner">
 			    <a class="brand" href="#">Title</a>
@@ -102,32 +61,7 @@
 			    </ul>
 			  </div>
 			</div>
-			<!-- end nav 2 -->
-
-
-			<!-- nav 3 -->
-		    <div class="navbar">
-		    <div class="navbar-inner">
-		    <div class="container">
-		    
-			    <ul class="nav">  
-				  <li class="active">  
-				    <a class="brand" href="#"><?php wp_nav_menu( array( 'theme_location' => 'top-menu' )); ?></a>  
-				  </li>  
-				  <li><a href="#">About</a></li>  
-				  <li><a href="#">Portfolio</a></li>  
-				  <li><a href="#">Contact</a></li>  
-				</ul>  
-
-
-		    </div>
-		    </div>
-		    </div>
- 			<!-- end nav 3-->
-
-
-
-
+			<!-- end nav  -->
 
 
 		<!-- don't need title
