@@ -13,10 +13,13 @@ Author URI: http://www.your address.com/
 @import url('assets/css/bootstrap-responsive.css');
 
 body { 
+		/*background-color:  linear-gradient(to bottom, #e5e5e5 8%,#c1c1c1 44%);*/
+	background-color:  71% 100% 90deg,#ABABAB, #C9C9C9, #C7C7C7 100%;
+	/*background-image:  url('./img/2-2.png') no-repeat right top;*/
 	margin:10px;
 	padding-top: 60px; 
 	padding-bottom: 40px; 
-	background: #e5e5e5 url('./img/2-2.png') no-repeat right top;
+
 
 }
 
@@ -33,6 +36,7 @@ body {
 	border-width: 1px;
 	border-color: #cccccc;
 	border-radius: 4px;
+	box-shadow: 2px 2px 11px 5px #cccccc;
 }
 
 .footer-iso {
@@ -44,11 +48,18 @@ body {
 #all-post {
 	
 	background-color:  #ebebeb;
+	/*background-color: rgba(25, 24, 74, 0.1);
+	color: rgba(25, 24, 74, 0.1);*/
+
+
+	opacity: 0.45;
+
 	padding:20px 30px;
 	border-color: #cccccc;
 	border-radius: 4px;
 	border-style: solid;
 	border-width: 1px;
+	box-shadow: 2px 2px 5px 2px #cccccc;
 
 }
 

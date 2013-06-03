@@ -38,14 +38,22 @@
 
 
 
-
-
-<nav>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact Us</a>
-</nav>
+<ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
 
 
 
@@ -53,11 +61,11 @@
 			<!-- nav  -->
 			<div class="navbar">
 			  <div class="navbar-inner">
-			    <a class="brand" href="#">Title</a>
+			    <a class="brand" href="#">Home</a>
 			    <ul class="nav">
-			      <li class="active"><a href="#">Home</a></li>
-			      <li><a href="#">Link</a></li>
-			      <li><a href="#">Link</a></li>
+
+<?php wp_list_pages('exclude=17,38' ); ?>
+
 			    </ul>
 			  </div>
 			</div>
