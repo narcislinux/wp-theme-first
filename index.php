@@ -204,6 +204,14 @@
 <div class="container-fluid">
 	<div id="footer">
 
+		<div class="footer-top container-fluid">
+			<div class="span4">
+			</div>
+			<div class="span4">
+			</div>
+			<div class="span4">
+			</div>
+		</div>
 		<div class="span12">
 			
 

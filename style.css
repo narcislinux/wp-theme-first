@@ -13,10 +13,12 @@ Author URI: http://www.your address.com/
 @import url('assets/css/bootstrap-responsive.css');
 
 body { 
-		/*background-color:  linear-gradient(to bottom, #e5e5e5 8%,#c1c1c1 44%);*/
-	background-color:  71% 100% 90deg,#ABABAB, #C9C9C9, #C7C7C7 100%;
-	/*background-image:  url('./img/2-2.png') no-repeat right top;*/
-	margin:10px;
+		/**/
+	/*background-color:  71% 100% 90deg,#ABABAB, #C9C9C9, #C7C7C7 100%;*/
+	/*background: #e5e5e5 url('./img/3.png') no-repeat right top;*/
+	background: #54acac url('./img/bgs/silver_scales.png') right top;
+
+	/*background-color:  linear-gradient(to bottom, #e5e5e5 8%,#c1c1c1 44%);*/
 	padding-top: 60px; 
 	padding-bottom: 40px; 
 
@@ -31,12 +33,17 @@ body {
 	margin-top: 30px;
 	background-color: #54acac;
 	height: 300px;
+	padding:40px 0px 40px;
 	position: center; 
-	border-top-style: solid;
+	/*border-top-style: solid;
 	border-width: 1px;
 	border-color: #cccccc;
 	border-radius: 4px;
-	box-shadow: 2px 2px 11px 5px #cccccc;
+	box-shadow: 2px 2px 11px 5px #cccccc;*/
+}
+.footer-top{
+	height: 100px;
+	
 }
 
 .footer-iso {
@@ -67,7 +74,9 @@ body {
 
 }
 
-/* .post-sidebar{
-	background-color:  #efefef;
-	
-} */
+.post-sidebar{
+	background-color:  #e5e5e5;
+	margin: 0px;
+	padding:10px 0 10px;
+
+} 
