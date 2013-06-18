@@ -36,35 +36,13 @@
 	<div class="row-fluid">
  		<div class="span12">
 
-
-
-<ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-
-
-
-
 			<!-- nav  -->
 			<div class="navbar">
 			  <div class="navbar-inner">
 			    <a class="brand" href="#">Home</a>
 			    <ul class="nav">
 
-<?php wp_list_pages('exclude=17,38' ); ?>
+	‍				<?php wp_list_pages('exclude=17,38' ); ?>
 
 			    </ul>
 			  </div>
@@ -89,8 +67,8 @@
 <div class="container-fluid" >
 <div class="row-fluid">
 			
-			<div class="span8">
-				<div id="all-post">
+			<div id="all-post" class="span8">
+				
 		 			<?php if ( have_posts() ) : ?>
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
@@ -133,7 +111,7 @@
 						<h2><?php _e('Not Found'); ?></h2>
 						</div>
 					<?php endif; ?>
-				</div>
+				
 			</div>
 		
 			
@@ -142,12 +120,13 @@
 <!-- #sidebar -->
 
 
-			<div id="sidebar" class="hidden-phone">
-			 <div class="span4">
-
+			
+			 <div id="sidebar" class="span4 hidden-phone" >
+			
 				<div class="row-fluid">
 
 					<div class="span6">
+						<!--
 						<ul>
 
 							<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar() ) : else : ?>
@@ -160,9 +139,6 @@
 								</ul>
 							</li>
 
-							<!-- li id="search">
-							<?php include(TEMPLATEPATH . '/searchform.php'); ?>
-							</li -->
 
 							<li id="calendar"><h2><?php _e('Calendar'); ?></h2>
 							<?php get_calendar(); ?>
@@ -188,8 +164,10 @@
 							<?php endif; ?>
 
 						</ul>
+					     -->
 					</div>
 					<div class="span6">
+						&nbsp;
 					</div>
 
 				</div>
@@ -203,7 +181,7 @@
 			    	
 		    	</div>
 
-			 </div>
+			 
 			</div>
 
 
